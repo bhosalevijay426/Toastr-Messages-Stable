@@ -92,7 +92,15 @@ toastr.success('File Uploaded Successfully.!!', 'Success Message', {timeOut: 500
  });
  </pre>
 </li>
+<li>To access hidden field include following directive in your .aspx page
+     <pre>
+     &lt;%@ MasterType VirtualPath="Your Masterpage Path" %&gt;
+    </pre></li>
+    <li>To Display Toastr just set Hidden Field Value in .aspx.cs page
+    <h4>Master.SetHiddenValue = "success,File Upload Successfull";</h4>
+    <h5>Note : success is type of message you want to display and after comma the actual message to display you can check above javascript code why I comma seperated message type and message</h5></li>
+  </ul>
 </ul>
-<b>Thanks Guys Enjoy the Toastr</b>
+<b>Thanks Guys and Enjoy the Toastr</b>
 <h1>Credits</h1>
 <p>Inspired By <a href="https://github.com/CodeSeven/toastr" target="_blank">https://github.com/CodeSeven/toastr</a></p>
